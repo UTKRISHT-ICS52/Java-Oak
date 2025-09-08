@@ -1,8 +1,11 @@
 
+import java.util.Scanner;
+
+
 
 // This is First Java Program 
-/*
-public class first  {
+
+public class first  
     public static void main(String[]utkrisht){
         System.out.println("codewithutkrisht");
     };
@@ -63,7 +66,7 @@ public class first {
     }
 }
 
-*/
+
 
 public class first{
     public static void main(String[] args) {
@@ -77,3 +80,36 @@ public class first{
     }
 }
 
+
+public class first{
+    public static void main(String[]args){
+        int num;
+        System.out.print("Enter a number : ");
+        Scanner s=new Scanner(System.in);
+        num=s.nextInt();
+        for (int i = 0; i < 10; i++) {
+            System.out.print(num*i);
+
+        }
+    }
+}
+
+public class first{
+    public static void main(String[] args) {
+        int num;
+        System.out.print("Enter any number : ");
+        Scanner s=new Scanner(System.in);
+        num=s.nextInt();
+        while(num>=0){
+            if(num%2==0){
+                System.out.println("even number");
+                break; 
+            }
+           else{
+            System.out.println("odd number");
+            break;
+           }
+        }
+        s.close();
+    }
+}
