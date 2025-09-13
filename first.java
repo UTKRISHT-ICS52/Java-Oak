@@ -1,7 +1,4 @@
-
-import java.util.Scanner;
-
-
+/* import java.util.Scanner;
 
 // This is First Java Program 
 
@@ -94,6 +91,7 @@ public class first{
     }
 }
 
+import java.util.Scanner;
 public class first{
     public static void main(String[] args) {
         int num;
@@ -103,13 +101,16 @@ public class first{
         while(num>=0){
             if(num%2==0){
                 System.out.println("even number");
-                break; 
+                break;
             }
-           else{
-            System.out.println("odd number");
-            break;
-           }
+            else{
+                System.out.println("odd number");
+                break;
+            }
         }
         s.close();
     }
 }
+*/
+        
+
