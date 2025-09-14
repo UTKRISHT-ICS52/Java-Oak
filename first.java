@@ -111,6 +111,61 @@ public class first{
         s.close();
     }
 }
-*/
+
+// use of relational operators 
+public class first{
+    public static void main (String[] args){
+        int a =10, b =20;
+        System.out.println(a==b);
+        System.out.println(a!=b);
+        System.out.println(a>b);
+        System.out.println(a<b);
+        System.out.println(a>=b);
+        System.out.println(a<=b);
+    }
+}
+
+// use of logical operators
+public class first{
+    public static void main (String[] args){
+        int a =10, b =20;
+        System.out.println(a==b && a<b);
+        System.out.println(a==b || a!=b);
+        System.out.println(!(a>b));
+    }
+}
+
+
+// use of Assignment operators
+public class first{
+    public static void main(String []args){
+        int a =10;
+        a+=10;
+        System.out.println(a);
+    }
+}
+
+
+// use of conditional operators
+public class first{
+    public static void main(String[] args) {
+        int a =10, b=20, c=50;
+        int r = (a>b)?(a>c?a:c):(b>c?b:c);
+        System.out.println(r);
+    }
+}
+
+*/ 
+// use of methods
+public class first{
+    public static void main(String[] args) {
+        System.out.println(sum(10,20)); // method calling 
         
+    }
+    static int sum(int a, int b){
+        return a+b; 
+    }
+} 
+        
+
 
