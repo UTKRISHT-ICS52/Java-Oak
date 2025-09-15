@@ -155,7 +155,7 @@ public class first{
     }
 }
 
-*/ 
+
 // use of methods
 public class first{
     public static void main(String[] args) {
@@ -166,6 +166,12 @@ public class first{
         return a+b; 
     }
 } 
-        
+*/
+public class first {
 
+    // Method to print a message
+    public static void printMessage() {
+        System.out.println("Hello, this is a method in Java!");
+    }   
+}
 
