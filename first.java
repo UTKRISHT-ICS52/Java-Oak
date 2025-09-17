@@ -166,12 +166,74 @@ public class first{
         return a+b; 
     }
 } 
-*/
+
 public class first {
 
     // Method to print a message
-    public static void printMessage() {
+    public static void main(String[]args) {
         System.out.println("Hello, this is a method in Java!");
     }   
 }
+
+
+public class first {
+    public static void main(String[]args){
+        int a[]={1,2,3,4,5}; // a[5]
+        System.out.println(a[2]); // ans. 3 
+    }
+ }
+
+// all element print of Array in JAVA using for-each loop 
+ public class first {
+    public static void main(String[]args){
+        int a[]={1,2,3,4,5}; // a[5]
+        for (int b : a) {
+            System.out.println(b+ "");
+        }
+    }
+ }
+
+// input from user in  1D Array 
+import java.util.Scanner; 
+ public class first {
+    public static void main(String[]args){
+        // int a[]={1,2,3,4,5}; // a[5]
+        int a[]=new int[5];
+        System.out.println("Enter elements of Array :");
+        Scanner s=new Scanner(System.in);
+        for (int i=0; i<5; i++) {
+            a[i]=s.nextInt();
+        }
+        System.out.println("\n Array elements are :");
+        for (int b : a) {
+            System.out.println(b+ "");
+        }
+    }
+ }
+
+
+*/
+// Input from user in 2D Array 
+import java.util.Scanner; 
+ public class first {
+    public static void main(String[]args){
+        // int a[]={1,2,3,4,5}; // a[5]
+        int a[][]=new int[5][5];
+        System.out.println("Enter elements of Array :");
+        Scanner s=new Scanner(System.in);
+        for (int i=0; i<5; i++) {
+            for (int j=0; j<5; j++) {
+                a[i][j]=s.nextInt();
+            }
+        }
+        System.out.println("\n Array elements are :");
+        
+        for (int i=0; i<5; i++) {
+            for (int j=0; j<5; j++) {
+                System.out.print(a[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+  }
 
