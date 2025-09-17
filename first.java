@@ -212,7 +212,7 @@ import java.util.Scanner;
  }
 
 
-*/
+
 // Input from user in 2D Array 
 import java.util.Scanner; 
  public class first {
@@ -237,3 +237,21 @@ import java.util.Scanner;
     }
   }
 
+
+// String in JAVA
+public class first {
+    public static void main(String[] args) {
+        String str= "codewithutkrisht";
+        int len=str.length();
+        System.out.print(len); 
+    }
+}
+
+*/
+public class first {
+    public static void main(String[] args) {
+        String str= "codewithutkrisht";
+
+        System.out.print(str.toUpperCase());
+    }
+}
