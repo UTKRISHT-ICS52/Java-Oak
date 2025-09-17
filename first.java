@@ -247,7 +247,7 @@ public class first {
     }
 }
 
-*/
+
 public class first {
     public static void main(String[] args) {
         String str= "codewithutkrisht";
@@ -255,3 +255,22 @@ public class first {
         System.out.print(str.toUpperCase());
     }
 }
+
+
+public class first {
+    public static void main(String[] args) {
+        String str= "CODEWITHUTKRISHT";
+
+        System.out.print(str.toLowerCase());
+    }
+}
+
+
+public class first {
+    public static void main(String[] args) {
+        String str= "code"; // immutable(Can not be changed)
+        String str2= str.concat("withutkrisht");
+        System.out.print(str2);
+    }
+}
+*/

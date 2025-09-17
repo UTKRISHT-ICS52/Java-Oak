@@ -14,3 +14,10 @@ public class Test {
     }
 }
 */
+public class Test {
+    public static void main(String[] args) {
+        String str= "code"; // immutable(Can not be changed)
+        String str2= str.concat("withutkrisht");
+        System.out.print(str2);
+    }
+}
