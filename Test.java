@@ -13,7 +13,7 @@ public class Test {
         s.close();
     }
 }
-*/
+
 public class Test {
     public static void main(String[] args) {
         String str= "code"; // immutable(Can not be changed)
@@ -21,3 +21,4 @@ public class Test {
         System.out.print(str2);
     }
 }
+*/
