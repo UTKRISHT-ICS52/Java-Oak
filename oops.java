@@ -1,3 +1,5 @@
+/*
+// create a class in java 
 class person {
     int age = 21; // instance variable 
     int weight = 60;
@@ -20,4 +22,100 @@ class person {
         p.sleep();
     }
 
+}
+
+// constructor in java
+class oops 
+{
+    int a; String name;
+    oops(){
+        a=0; name=null; 
+    }
+    void display(){
+        System.out.println(a+" "+name); 
+    }
+}
+class B
+{
+    public static void main(String[]args){
+        oops ref = new oops();
+        ref.display();
+        oops ref2 = new oops();
+        ref2.display();
+
+    }
+}
+// Default constructor 
+
+class A {
+    int a; String b; boolean c;
+    A(){
+        a =100; b="Codewithutkrisht"; c=true;
+    }
+    void Disp(){
+        System.out.println(a+""+b+""+c);
+    }
+}
+class B 
+{
+    public static void main(String[] args) {
+        
+        A ref = new A();
+        ref.Disp();
+
+    }
+}
+
+// Parametrized Constructor
+class A {
+    int a; String b; boolean c;
+    A(int x, String y, boolean z) // parametrized 
+    {
+        a = x; b = y; c = z;
+    }
+    void Disp(){
+        System.out.println(a+""+b+""+c);
+    }
+}
+class B
+{
+    public static void main(String[] args) {
+
+        A ref = new A(100, "Codewithutkrisht", true);
+        ref.Disp();
+
+    }
+}
+
+*/ 
+// Copy Constructor 
+class oops {
+    int a; String b; boolean c;
+    oops(int x, String y, boolean z) // parametrized 
+    {
+        a = x; b = y; c = z;
+    }
+    oops(oops ref) // copy constructor
+    {
+        a = ref.a; b = ref.b; c = ref.c;
+    }
+    void Disp(){
+        System.out.println(a+""+b+""+c);
+    }
+}
+
+*/
+// Private Constructor 
+class A {
+    int a; String b; boolean c;
+    private A() // private constructor 
+    {
+        a = 100; b = "Codewithutkrisht"; c = true;
+    }
+    void Disp(){
+        System.out.println(a+""+b+""+c);
+    }
+    static A getA(){ // static method to get the instance of class A
+        return new A();
+    }
 }
