@@ -45,6 +45,7 @@ class B
 
     }
 }
+
 // Default constructor 
 
 class A {
@@ -56,7 +57,7 @@ class A {
         System.out.println(a+""+b+""+c);
     }
 }
-class B 
+class oops
 {
     public static void main(String[] args) {
         
@@ -65,7 +66,7 @@ class B
 
     }
 }
-
+/*
 // Parametrized Constructor
 class A {
     int a; String b; boolean c;
@@ -87,7 +88,7 @@ class B
     }
 }
 
-*/ 
+
 // Copy Constructor 
 class oops {
     int a; String b; boolean c;
@@ -104,7 +105,7 @@ class oops {
     }
 }
 
-*/
+
 // Private Constructor 
 class A {
     int a; String b; boolean c;
@@ -115,7 +116,25 @@ class A {
     void Disp(){
         System.out.println(a+""+b+""+c);
     }
-    static A getA(){ // static method to get the instance of class A
+    static A GetA(){ // static method to get the instance of class A
         return new A();
     }
+} 
+
+// Super Keyword
+class oops {
+    int a = 10; 
 }
+class B extends oops {
+    int a = 20;
+    void display(){
+        System.out.println(a); // 20
+        System.out.println(super.a); // 10
+    }
+    public static void main(String[] args) {
+        B ref = new B();
+        ref.display();
+    }
+}
+
+
