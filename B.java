@@ -4,7 +4,7 @@ class A {
         a =100; b="Codewithutkrisht"; c=true;
     }
     void Disp(){
-        System.out.println(a+""+b+""+c);
+        System.out.println(a+" "+b+" "+c);
     }
 }
 class B 
@@ -15,4 +15,4 @@ class B
         ref.Disp();
 
     }
-}
+} 
