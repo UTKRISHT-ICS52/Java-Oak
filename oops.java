@@ -136,6 +136,24 @@ class B extends oops {
         ref.display();
     }
 }
+*/
+// This keyword 
+class oops{
+    int a ;
+    oops(int a){
+        this.a=a;
+    }
+    void show()
+    {
+        System.out.println(this);
+    }
+    public static void main(String[] args) {
+       oops r=new oops();  
+       System.out.println(r);
+       r.show();
+    }
+    }
+
 
 
 

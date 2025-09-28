@@ -16,7 +16,7 @@ class B
 
     }
 } 
-*/
+
     class Animal {
         String color = "white";
     }
@@ -36,3 +36,5 @@ class B
             dog.displayColor();
         }
     }
+    */ 
+   
