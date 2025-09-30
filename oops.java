@@ -136,7 +136,7 @@ class B extends oops {
         ref.display();
     }
 }
-*/
+
 // This keyword 
 class oops{
     int a ;
@@ -153,7 +153,5 @@ class oops{
        r.show();
     }
     }
-
-
-
+*/
 
