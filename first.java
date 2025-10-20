@@ -1,17 +1,15 @@
- /* import java.util.Scanner;
-// This is First Java Program 
-public class first  
+/*public class first {
     public static void main(String[]utkrisht){
         System.out.println("codewithutkrisht");
     };
 }
 
-class second  {
+class first  {
     int a=10; // instance variable 
     static double b=20.5; // static  variable
     public static void main(String[] args){
         boolean c = true; // local variable
-        second s=new second();
+        first s=new first();
         System.out.println(s.a);
         System.out.println(b);
         System.out.println(c);
@@ -271,4 +269,4 @@ public class first {
         System.out.print(str2);
     }
 }
-*/
+*/ 

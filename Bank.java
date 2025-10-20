@@ -36,7 +36,7 @@
     }
 }
 
-*/
+
 import java.util.Scanner; 
 
 class Bank {
@@ -73,3 +73,4 @@ class Bank {
         }
     }
 }
+*/
