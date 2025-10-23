@@ -1,4 +1,4 @@
-/* import java.util.Scanner;
+/*import java.util.Scanner;
 class  calculator{
     public static void main(String[] args) {
         int a,b,c,ch;

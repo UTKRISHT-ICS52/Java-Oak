@@ -154,4 +154,63 @@ class oops{
     }
     }
 
+
+// Instance block and Static block in JAVA 
+class oops {
+    // Instance block in java 
+    {
+        System.out.println("Codewithutkrisht");
+        
+    }
+}
+
+// static block in java 
+class oops {
+    static {
+        System.out.println("codewithutkrisht");     
+}
+public static void main (string[]args){
+
+}
+}
 */
+// Abstraction in JAVA 
+abstract class oops 
+{
+    public String Name = "myBank";
+    public String IFSC = "myBank2816";
+    
+    public void bankDetail()
+
+{
+    System.out.println("Bank_Name: " + Name + ", IFSC_Code: " +IFSC);
+   
+}
+abstract void deposit();// abstract method 
+abstract void withdraw();// abstract method
+abstract void checkbalance(); // abstract method 
+
+}
+class Bank extends oops{
+    private double bal = 5000; 
+    private int pwd = 12345;
+
+    public void deposit(){
+        System.out.println("Deposit method");
+    }
+    public void withdraw(){
+        System.out.println("Withdraw method");
+    }
+    public void checkbalance(){
+        System.out.println("Check Balance method");
+    }
+    public static void main(String[] args) {
+        Bank b = new Bank();
+        b.bankDetail();
+        b.deposit();
+        b.withdraw();
+        b.checkbalance();
+    }
+}
+
+
