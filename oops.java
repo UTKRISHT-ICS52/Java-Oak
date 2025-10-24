@@ -173,7 +173,7 @@ public static void main (string[]args){
 
 }
 }
-*/
+
 // Abstraction in JAVA 
 abstract class oops 
 {
@@ -212,5 +212,112 @@ class Bank extends oops{
         b.checkbalance();
     }
 }
+
+// Polymorphism in JAVA
+class oops {
+    void show() {
+        System.out.println("Parent class");
+    }
+}
+class B extends oops {
+    void show() {
+        System.out.println("Child class");
+    }
+    public static void main(String[] args) {
+        oops ref = new B();
+        ref.show();
+    }
+}
+
+// method overloading in Java (Compile time  polymorphism)
+class oops 
+{
+    void add ()
+    {
+        int a = 10, b = 20;
+        c = a + b;
+        System.out.println(c);
+    }
+    void add (int x , int y )
+    {
+        int c ;
+        c = x+y;
+        System.out.println(c);
+    }
+    void add (int x, double y)
+    {
+        double c;
+        c = x+y; 
+        System.out.println(c); 
+    }
+   public static void main (String[] args) {
+        oops ref = new oops();
+        ref.add();
+        ref.add(100,200);
+        ref.add(100, 99.99);
+   }
+   
+//  method overloading in Java (Run time  polymorphism)
+
+class oops {
+    void show(){
+        System.out.println("Parent class");
+
+    }
+    void show(String s){
+        System.out.println(s);
+    }
+    public static void main(String[] args) {
+        oops ref = new oops();
+        ref.show();
+        ref.show("Codewithutkrisht");
+    }
+}
+
+// other program for runtime polymorphism
+class oops {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends oops {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends oops {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class main{
+    public static void main(String[] args) {
+        oops a;
+
+        a = new Dog();
+        a.sound(); // Output: Dog barks
+
+        a = new Cat();
+        a.sound(); // Output: Cat meows
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
