@@ -1,4 +1,4 @@
-/* Read data from a File */
+/* Read data from a File 
 import java.io.*;
 class readFile {
     public static void main(String[] args) {
@@ -14,4 +14,4 @@ class readFile {
         }
     }
 } 
-
+*/
