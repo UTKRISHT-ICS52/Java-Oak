@@ -151,6 +151,41 @@ public class first{
     }
 }
 
+// use of Ternary Operators 
+class TernaryExample {
+    public static void main(String[] args) {
+        int a = 10, b = 20;
+
+        int max = (a > b) ? a : b;
+        System.out.println("Maximum number is: " + max);
+    }
+}
+
+// use of Airthmetics Operators 
+class ArithmeticOperators {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 3;
+
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+        System.out.println("Modulus: " + (a % b));
+    }
+}
+// Increment or Decrement operators 
+class Demo {
+    public static void main(String[] args) {
+        int a = 5;
+
+        System.out.println(a++); // post-increment
+        System.out.println(++a); // pre-increment
+        System.out.println(a--); // post-decrement
+        System.out.println(--a); // pre-decrement
+    }
+}
+
 
 // use of methods
 public class first{
