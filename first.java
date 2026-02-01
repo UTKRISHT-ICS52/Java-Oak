@@ -304,4 +304,68 @@ public class first {
         System.out.print(str2);
     }
 }
+
+// Bank Mangement Systrem 
+
+import java.util.Scanner;
+
+class Bank {
+    int balance = 1000;   // initial balance
+
+    void checkBalance() {
+        System.out.println("Current Balance: " + balance);
+    }
+
+    void deposit(int amount) {
+        balance += amount;
+        System.out.println("Amount Deposited: " + amount);
+    }
+
+    void withdraw(int amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Amount Withdrawn: " + amount);
+        } else {
+            System.out.println("Insufficient Balance!");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Bank b = new Bank();
+        int choice, amount;
+
+        System.out.println("1. Check Balance");
+        System.out.println("2. Deposit");
+        System.out.println("3. Withdraw");
+
+        System.out.print("Enter your choice: ");
+        choice = sc.nextInt();
+
+        switch (choice) {
+            case 1:
+                b.checkBalance();
+                break;
+
+            case 2:
+                System.out.print("Enter deposit amount: ");
+                amount = sc.nextInt();
+                b.deposit(amount);
+                b.checkBalance();
+                break;
+
+            case 3:
+                System.out.print("Enter withdraw amount: ");
+                amount = sc.nextInt();
+                b.withdraw(amount);
+                b.checkBalance();
+                break;
+
+            default:
+                System.out.println("Invalid choice!");
+        }
+        sc.close();
+    }
+}
+
 */
