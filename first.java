@@ -368,4 +368,79 @@ class Bank {
     }
 }
 
+// Calculator using Class & Object 
+import java.util.Scanner;
+
+class Calculator {
+
+    // method for addition
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // method for subtraction
+    int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // method for multiplication
+    int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // method for division
+    int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        Calculator calc = new Calculator(); // object creation
+
+        System.out.print("Enter first number: ");
+        int x = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int y = sc.nextInt();
+
+        System.out.println("Addition: " + calc.add(x, y));
+        System.out.println("Subtraction: " + calc.subtract(x, y));
+        System.out.println("Multiplication: " + calc.multiply(x, y));
+        System.out.println("Division: " + calc.divide(x, y));
+
+        sc.close();
+    }
+}
+// make a program print Brand , Color , Year, Age of Car using Class & Object 
+class Car {
+    String brand;
+    String color;
+    int year;
+
+    void displayData() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Color: " + color);
+        System.out.println("Year: " + year);
+    }
+}
+     void displayAge(int currentYear) {
+        int age = currentYear - year;
+        System.out.println("Age of Car: " + age + " years");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+
+        Car myCar = new Car();   // object creation
+
+        myCar.brand = "Maruti";
+        myCar.color = "Red";
+        myCar.year = 2020;
+        myCar.displayData();
+    }
+}
 */
