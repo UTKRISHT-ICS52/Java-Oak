@@ -443,4 +443,36 @@ public class Main {
         myCar.displayData();
     }
 }
+
+// copy constructor in java (classroom example )
+class Const {
+
+    String name;
+    int id;
+
+    // Parameterized constructor
+    Const(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    // Copy constructor
+    Const(Const c2) {
+        this.name = c2.name;
+        this.id = c2.id;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("First object");
+
+        Const c1 = new Const("Utkrisht", 52);
+        System.out.println("My name: " + c1.name + " my id: " + c1.id);
+
+        Const c2 = new Const(c1);
+        System.out.println("Copy constructor used second object");
+        System.out.println("My name: " + c2.name + " my id: " + c2.id);
+    }
+}
+
 */
