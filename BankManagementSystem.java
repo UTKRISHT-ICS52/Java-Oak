@@ -87,7 +87,7 @@ public class BankManagementSystem {
         System.out.print("Choose Account Type: ");
         int choice = sc.nextInt();
 
-        if (choice == 1) {
+        if(choice == 1) {
             SavingAccount sa = new SavingAccount();
             sa.addAccount(sc);
 
@@ -113,3 +113,27 @@ public class BankManagementSystem {
         sc.close();
     }
 }
+/*           ┌────────────────────┐
+            │      Account       │
+            ├────────────────────┤
+            │ - accountNo : int  │
+            │ - name : String    │
+            │ - address : String │
+            │ - dob : String     │
+            ├────────────────────┤
+            │ + addAccount()     │
+            │ + displayAccount()│
+            └─────────▲──────────┘
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+┌────────────────────┐   ┌────────────────────┐
+│  SavingAccount     │   │   LoanAccount      │
+├────────────────────┤   ├────────────────────┤
+│ - balance : double │   │ - loanAmount:double│
+├────────────────────┤   ├────────────────────┤
+│ + deposit()        │   │ + addLoan()         │
+│ + withdraw()       │   │ + payEMI()          │
+│ + displayBalance() │   │ + displayLoan()     │
+└────────────────────┘   └────────────────────┘
+*/
