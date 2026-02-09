@@ -473,6 +473,90 @@ class Const {
         System.out.println("Copy constructor used second object");
         System.out.println("My name: " + c2.name + " my id: " + c2.id);
     }
+
+
+// Multi-level Inheritance in JAVA 
+
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+class Puppy extends Dog {
+    void play() {
+        System.out.println("Puppy is playing");
+    }
+}
+// Main class
+public class MultiLevelInheritance {
+    public static void main(String[] args) {
+
+        Puppy p = new Puppy();
+        p.eat();
+        p.bark();
+        p.play();
+    }
+}
+
+
+// Polimorphism (Method Overriding) in JAVA
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+// Main class
+public class MethodOverridingDemo {
+    public static void main(String[] args) {
+
+        Animal a = new Dog(); 
+        a.sound();         
+    }
+}
+
+
+// Polymorphism (Method Overloading) in JAVA
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}
+
+public class MethodOverloadingDemo {
+    public static void main(String[] args) {
+
+        Calculator c = new Calculator();
+
+        System.out.println(c.add(10, 20));
+        System.out.println(c.add(10, 20, 30));
+        System.out.println(c.add(5.5, 4.5));
+    }
+}
+
+
 */
 
 
