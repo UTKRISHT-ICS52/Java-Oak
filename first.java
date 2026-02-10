@@ -556,6 +556,50 @@ public class MethodOverloadingDemo {
     }
 }
 
+//Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
+// Base Class
+abstract class Employee {
+    int empId;
+
+    abstract double calculateSalary();
+}
+// Derived Class- (Permanent Employee)
+class PermanentEmployee extends Employee {
+    double basicPay1 ;
+
+    PermanentEmployee(double basicPay) {
+        this.basicPay1 = basicPay1;
+    }
+
+    double calculateSalary() {
+        return basicPay1 ;
+    }
+}
+// Derived Class- (Contract Employee )
+class ContractEmployee extends Employee {
+    double basicpay2;
+
+    ContractEmployee( double basicpay2) {
+
+        this.basicpay2 = basicpay2;
+    }
+
+    double calculateSalary() {
+        return basicpay2 ;
+    }
+}
+// Main Class
+class Main {
+    public static void main(String[] args) {
+        Employee e1 = new PermanentEmployee(30000, 8000, 5000);
+        Employee e2 = new ContractEmployee(120, 300);
+
+        System.out.println("Permanent Employee Salary: " + e1.calculateSalary());
+        System.out.println("Contract Employee Salary: " + e2.calculateSalary());
+    }
+}
+
+
 
 */
 
