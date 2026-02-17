@@ -556,7 +556,8 @@ public class MethodOverloadingDemo {
     }
 }
 
-//Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
+*/
+ // Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
 // Base Class
 abstract class Employee {
     int empId;
@@ -602,6 +603,48 @@ class Main {
 
 
 */
+// A base class define a method for processing payment different gateway such as credit card, UPI & NetBanking.       How method overriding ensure correct processing logic is executed at run time
 
 
 
+// Base Class
+abstract class Payment {
+    abstract void processPayment(double amount);
+}
+
+// Credit Card Payment
+class CreditCardPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing Credit Card payment" + amount);
+    }
+}
+
+// UPI Payment
+class UPIPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing UPI payment" + amount);
+    }
+}
+
+// NetBanking Payment
+class NetBankingPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing NetBanking payment" + amount);
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        Payment p1 = new CreditCardPayment();
+        Payment p2 = new UPIPayment();
+        Payment p3 = new NetBankingPayment();
+
+        p1.processPayment(5000);
+        p2.processPayment(2000);
+        p3.processPayment(10000);
+    }
+}
