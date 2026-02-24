@@ -648,3 +648,79 @@ public class Main {
         p3.processPayment(10000);
     }
 }
+
+// Matrix Multiplication 
+import java.util.Scanner;
+
+public class MatrixMultiplicationBothWays {
+
+    // Function to multiply two matrices
+    static int[][] multiply(int[][] A, int[][] B, int r1, int c1, int c2) {
+        int[][] result = new int[r1][c2];
+
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                for (int k = 0; k < c1; k++) {
+                    result[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        return result;
+    }
+
+    // Function to print matrix
+    static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Matrix A
+        System.out.print("Enter rows and columns of Matrix A: ");
+        int r1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        int[][] A = new int[r1][c1];
+
+        System.out.println("Enter elements of Matrix A:");
+        for (int i = 0; i < r1; i++)
+            for (int j = 0; j < c1; j++)
+                A[i][j] = sc.nextInt();
+
+        // Matrix B
+        System.out.print("Enter rows and columns of Matrix B: ");
+        int r2 = sc.nextInt();
+        int c2 = sc.nextInt();
+        int[][] B = new int[r2][c2];
+
+        System.out.println("Enter elements of Matrix B:");
+        for (int i = 0; i < r2; i++)
+            for (int j = 0; j < c2; j++)
+                B[i][j] = sc.nextInt();
+
+        // A × B
+        if (c1 == r2) {
+            System.out.println("\nMatrix A × B:");
+            int[][] AB = multiply(A, B, r1, c1, c2);
+            printMatrix(AB);
+        } else {
+            System.out.println("\nA × B is NOT possible.");
+        }
+
+        // B × A
+        if (c2 == r1) {
+            System.out.println("\nMatrix B × A:");
+            int[][] BA = multiply(B, A, r2, c2, c1);
+            printMatrix(BA);
+        } else {
+            System.out.println("\nB × A is NOT possible.");
+        }
+
+        sc.close();
+    }
+}
