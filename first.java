@@ -556,7 +556,8 @@ public class MethodOverloadingDemo {
     }
 }
 
-//Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
+*/
+ // Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
 // Base Class
 abstract class Employee {
     int empId;
@@ -602,6 +603,124 @@ class Main {
 
 
 */
+// A base class define a method for processing payment different gateway such as credit card, UPI & NetBanking.       How method overriding ensure correct processing logic is executed at run time
 
 
 
+// Base Class
+abstract class Payment {
+    abstract void processPayment(double amount);
+}
+
+// Credit Card Payment
+class CreditCardPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing Credit Card payment" + amount);
+    }
+}
+
+// UPI Payment
+class UPIPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing UPI payment" + amount);
+    }
+}
+
+// NetBanking Payment
+class NetBankingPayment extends Payment {
+    @Override
+    void processPayment(double amount) {
+        System.out.println("Processing NetBanking payment" + amount);
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        Payment p1 = new CreditCardPayment();
+        Payment p2 = new UPIPayment();
+        Payment p3 = new NetBankingPayment();
+
+        p1.processPayment(5000);
+        p2.processPayment(2000);
+        p3.processPayment(10000);
+    }
+}
+
+// Matrix Multiplication 
+import java.util.Scanner;
+
+public class MatrixMultiplicationBothWays {
+
+    // Function to multiply two matrices
+    static int[][] multiply(int[][] A, int[][] B, int r1, int c1, int c2) {
+        int[][] result = new int[r1][c2];
+
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c2; j++) {
+                for (int k = 0; k < c1; k++) {
+                    result[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        return result;
+    }
+
+    // Function to print matrix
+    static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int val : row) {
+                System.out.print(val + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Matrix A
+        System.out.print("Enter rows and columns of Matrix A: ");
+        int r1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        int[][] A = new int[r1][c1];
+
+        System.out.println("Enter elements of Matrix A:");
+        for (int i = 0; i < r1; i++)
+            for (int j = 0; j < c1; j++)
+                A[i][j] = sc.nextInt();
+
+        // Matrix B
+        System.out.print("Enter rows and columns of Matrix B: ");
+        int r2 = sc.nextInt();
+        int c2 = sc.nextInt();
+        int[][] B = new int[r2][c2];
+
+        System.out.println("Enter elements of Matrix B:");
+        for (int i = 0; i < r2; i++)
+            for (int j = 0; j < c2; j++)
+                B[i][j] = sc.nextInt();
+
+        // A × B
+        if (c1 == r2) {
+            System.out.println("\nMatrix A × B:");
+            int[][] AB = multiply(A, B, r1, c1, c2);
+            printMatrix(AB);
+        } else {
+            System.out.println("\nA × B is NOT possible.");
+        }
+
+        // B × A
+        if (c2 == r1) {
+            System.out.println("\nMatrix B × A:");
+            int[][] BA = multiply(B, A, r2, c2, c1);
+            printMatrix(BA);
+        } else {
+            System.out.println("\nB × A is NOT possible.");
+        }
+
+        sc.close();
+    }
+}
