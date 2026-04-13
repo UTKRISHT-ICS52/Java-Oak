@@ -556,7 +556,7 @@ public class MethodOverloadingDemo {
     }
 }
 
-*/
+
  // Problem(Pb)- problem no. 1 - An arragution a jpournal  employee class with method of calculate Salary, Derived class , paramanent and contract employee                                                                                                              now, How does method Overrriding help calculate salary  differenlty for each employee type at Runtime?
 // Base Class
 abstract class Employee {
@@ -599,10 +599,9 @@ class Main {
         System.out.println("Contract Employee Salary: " + e2.calculateSalary());
     }
 }
-
-
-
 */
+
+/* 
 // A base class define a method for processing payment different gateway such as credit card, UPI & NetBanking.       How method overriding ensure correct processing logic is executed at run time
 
 
@@ -724,3 +723,4 @@ public class MatrixMultiplicationBothWays {
         sc.close();
     }
 }
+*/
