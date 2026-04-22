@@ -60,4 +60,3 @@ To build a **strong foundation in Java programming** — from basics to advanced
 ## 🧑‍🎓 Author
 <h2>Utkrisht Patel</h2>
 <h3>Researcher 🕵🏻 & Developer </h3>
-<p>I specialize in DSA, Java, C, and C++, and learning ( Selenium with Java) automation testing along with DevOps tools like Docker, GitHub, GitLab, and AWS. and Using tools like VS code Editor, Eclipse IDE. This combination enables me to design scalable, efficient systems while also delivering responsive, user-friendly web applications. Whether working in collaborative teams or leading projects independently, I thrive on building impactful solutions that merge innovation with usability.</p
